@@ -3,6 +3,7 @@ import { Footer, NavigationBar, RouteTitle } from '../components/Route_Component
 import { AboutMeLink } from '../components/resume/About_Me';
 import { ExperienceItem, Google, NASA, USArmy } from '../components/resume/Experience';
 import { AcademicInvolvement } from '../components/resume/Academic_Involvement';
+import {ResumeSubheader, ResumeHeader} from '../components/resume/Headers';
 import img_profile from '/profile.jpg'
 import PageLoader from "../components/Page_Loader";
 import '../css/resume.css'
@@ -24,17 +25,12 @@ function Resume() {
                 <PageLoader />
             ) : (
                 <div className="route-container">
-                    <div className="resume-container w3-content">
+                    <div className="route-container-resume w3-content">
                         <NavigationBar />
 
                         <div className="w3-row-padding">
 
-                            <RouteTitle plain_text="Interactive Resume.">
-                                <div className="btn-download">
-                                    <a href="https://docs.google.com/document/d/1aRP5LGOwz1ywaAzwiP_AlnI-LAGG3Q0VKHdKFPD7Hfg/edit?usp=sharing"
-                                        target="_blank">&nbsp;&nbsp;Download</a>
-                                </div>
-                            </RouteTitle>
+                            <RouteTitle plain_text="My Resume."></RouteTitle>
 
                             <div className="w3-third">
                                 {/* about me container */}
@@ -42,7 +38,7 @@ function Resume() {
 
                                     {/* photo container > about me container */}
                                     <div className="w3-display-container photo-container">
-                                        <img src={img_profile} alt="Avatar" />
+                                        <img src={img_profile} alt="Portfolio photo" />
                                         <div className="w3-display-bottomleft w3-container">
                                             <h1 className="aboutme-name">Kelci Mensah</h1>
                                         </div>
@@ -52,10 +48,10 @@ function Resume() {
                                     <div className="w3-container aboutme-container">
 
                                         <div className="aboutme-information">
-                                            <AboutMeLink icon="fa-regular fa-map" plain_text='New York, NY' />
+                                            <AboutMeLink icon="fa-regular fa-map" plain_text='New York City, NY' />
                                             <AboutMeLink
                                                 icon="fa-brands fa-github fa-fw"
-                                                plain_text='@hellokelci'
+                                                plain_text='hellokelci'
                                                 href_link='https://www.github.com/hellokelci'
                                             />
                                             <AboutMeLink
@@ -73,28 +69,21 @@ function Resume() {
                                         <hr />
 
                                         {/* education > about me container */}
-                                        <h3 className="subheader" style={{ color: "#345D98" }}>Education.</h3>
+                                        <ResumeSubheader plain_text='Education'/>
 
                                         <div className="education-item">
                                             <p>Dual Bachelors in Computer Science and Cognitive Science, High Honors</p>
                                             <p className="location">
-                                                <a href="https://www.rutgers.edu/" className="hyperlink" target="_blank" style={{ color: "#CC0033" }}>Rutgers
-                                                    University</a>, New Brunswick, NJ
+                                                <a href="https://www.rutgers.edu/" className="hyperlink" target="_blank" style={{ color: "#CC0033" }}>Rutgers, The State University of New Jersey</a>, New Brunswick, NJ
                                             </p>
                                             <p className="date"><i className="fa-regular fa-calendar"></i> 2019 - 2023</p>
                                         </div>
 
                                         {/* skills > about me container */}
-                                        <h3 className="subheader" style={{ color: "#1F1F1F" }}>Skills.</h3>
+                                        <ResumeSubheader hex_color="1F1F1F" plain_text='Technical Skills'/>
 
-                                        <div className="education-item">
-                                            <h4>Languages + Libraries</h4>
-                                            <p>Python, Numpy, Pandas, HTML, CSS, JavaScript, TypeScript, React.js, SQL, Git</p>
-                                        </div>
-
-                                        <div className="education-item">
-                                            <h4>Software + Digital Tools</h4>
-                                            <p>Google Cloud Platform, Google Workspace, Figma, Adobe Photoshop, Procreate iOS, Microsoft Office 365</p>
+                                        <div className="skill-item">
+                                            <p>Python, JavaScript, TypeScript, React.js, SQL, Git, HTML, CSS, Google Cloud Platform, Figma, Adobe Photoshop, Procreate iOS</p>
                                         </div>
 
                                         <br />
@@ -108,18 +97,24 @@ function Resume() {
                                 {/* work experience container */}
                                 <div className="experience-container w3-container w3-card w3-margin-bottom">
 
-                                    <h2 className="subheader" style={{ color: "#DA4E3F", margin: "2.5rem 0 1rem" }}>
-                                        Work Experience.
-                                    </h2>
+                                    <ResumeHeader hex_color="DA4E3F" plain_text="Work Experience"/>
 
-                                    <ExperienceItem experience="Cloud Technical Resident, Google Cloud">
-                                        <a className="location"><Google />, Atlanta, GA</a>
+                                    <ExperienceItem experience="Cloud Architect, Google Cloud">
+                                        <a className="location"><Google />, New York City, NY</a>
                                         <p><i className="fa-regular fa-calendar"></i> November 2023 - Present</p>
+                                        <ul>
+                                            <li>
+                                                Designed and supported technical implementation of highly-available, scalable, and secure cloud solutions on Google Cloud Platform within startups customer sector.
+                                            </li>
+                                            <li>
+                                                Utilized expertise in Google Cloud Platform products including serverless computing (Cloud Functions, Cloud Run), artificial intelligence (Vertex AI, Gemini), and data analytics (BigQuery, Dataflow) to successfully deliver multiple large-scale cloud migration projects, exceeding client expectations and timelines.
+                                            </li>
+                                        </ul>
                                     </ExperienceItem>
 
                                     <hr />
 
-                                    <ExperienceItem experience="Cloud Technical Resident, Google Cloud">
+                                    <ExperienceItem experience="Developer Relations Engineer, Google Cloud">
                                         <a className="location"><Google />, New York City, NY</a>
                                         <p><i className="fa-regular fa-calendar"></i> May 2022 - August 2022</p>
                                         <ul>
@@ -190,27 +185,6 @@ function Resume() {
 
                                     <br />
                                 </div>
-
-                                {/* academic involvement container */}
-                                <div className="involvement-container w3-container w3-card w3-margin-bottom">
-                                    <h2 className="subheader" style={{ color: "#3A7359", margin: "2.5rem 0 1rem" }}>Academic Involvement.</h2>
-
-                                    <AcademicInvolvement
-                                        involvement="Minority Engineering Educational Task (MEET) - Rutgers University NSBE Chapter"
-                                        active_dates="2019 - 2023"
-                                        description="Pre-professional student organization for Black, Hispanic, Asian, and other minority-representing student identities within engineering and other technology-based STEM fields."
-                                    />
-
-                                    <AcademicInvolvement
-                                        involvement="Douglass-DIMACS Computer Science Living Learning Community"
-                                        active_dates="2019 - 2023"
-                                        description="A curated living-learning center and community for women-representing undergraduate students majoring in computer science."
-                                    />
-
-                                    <br />
-                                    <br />
-
-                                </div >
                             </div >
                         </div >
                     </div >

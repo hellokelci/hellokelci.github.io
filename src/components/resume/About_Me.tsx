@@ -9,10 +9,11 @@ interface AboutMeLinkArgs {
 export function AboutMeLink({ icon, plain_text, href_link }: AboutMeLinkArgs) {
     return (
         <>
-            {href_link ? (<p className="widget"><i className={"w3-margin-right " + icon}></i>{plain_text}</p>)
-                : (<a className="widget" href={href_link} target="_blank">
-                    <p className="widget"><i className={"w3-margin-right " + icon}></i>{plain_text}</p>
-                </a>)}
+            {href_link ? (
+                <a className="aboutme-link" href={href_link} target="_blank">
+                    <p className="aboutme-link"><i className={"w3-margin-right " + icon}></i>{plain_text}</p>
+                </a>)
+            : (<p className="aboutme-link"><i className={"w3-margin-right " + icon}></i>{plain_text}</p>)}
 
         </>
     );

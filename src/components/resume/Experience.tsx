@@ -3,12 +3,12 @@ interface ExperienceArgs {
     experience: string;
 }
 
-export function ExperienceItem({experience, children } : ExperienceArgs) {
+export function ExperienceItem({ experience, children }: ExperienceArgs) {
     return (
         <div className="experience-item">
-                <h4 className="title">{experience}</h4>
-                {children}
-            </div>
+            <p className="resume-item-header">{experience}</p>
+            {children}
+        </div>
     )
 }
 

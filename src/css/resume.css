@@ -1,51 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
-.resume-container {
-    width: 90%!important;
+.route-container-resume {
+    width: 80%;
     /* border: 1px solid magenta; */
     margin: 0 auto;
+    color: #1f1f1f;
 }
 
-/* ------------------------- RESUME TITLE CONTAINER ------------------------- */
-.title-container h1 {
+@media screen and (max-width: 834px) {
+    .route-container-resume {
+        width: 93%;
+    }
+}
+
+/* ---------------------------- Headers Container --------------------------- */
+.route-title-container h1 {
     text-transform: uppercase;
     display: inline-block;
     font-size: 3rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
 }
 
-/* download button/link */
-.btn-download {
-    display: inline-block;
-    font-family: 'Space Mono', monospace;
+@media screen and (max-width: 834px) {
+    .route-title-container h1 {
+        font-size: 2.5rem;
+    }
 }
 
-.btn-download a {
-    transition: 0.2s;
-    text-decoration: none;
+.resume-subheader {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    margin: 24px 0 0;
 }
 
-.btn-download a:hover {
-    color: #ea4335;
+.resume-header {
+    font-size: 1.8rem;
 }
 
-/* --------------------------- ABOUT ME CONTAINER --------------------------- */
-.photo-container {
+.resume-item-header {
+    font-size: 1rem;
+}
+
+/* ----------------------- About Me Section Container ----------------------- */
+.photo-container .aboutme-name {
     color: #FFF;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 9px 0;
 }
 
 .photo-container img {
     width: 100%;
 }
 
-.aboutme-container .widget {
+.aboutme-container .aboutme-link {
     font-size: 0.87rem;
     line-height: 1.5rem;
-}
-
-.widget {
     text-decoration: none;
     transition: 0.2s ease-in-out;
+    padding: 0;
+    margin: 5px 0;
 }
 
 .aboutme-container a:hover {
@@ -65,27 +81,16 @@
     font-family: "Gabarito", sans-serif;
 }
 
-/* -------------------------------- HEADINGS -------------------------------- */
-h3 {
-    font-size: 1.1rem;
-    margin: 2rem 0 0;
-}
-
-h4 {
-    font-size: 0.85rem;
-    margin: 0.70rem 0 0.1rem;
-}
-
 /* ---------- EDUCATION, WORK EXPERIENCE, ACHIEVEMENTS, INVOLVEMENT --------- */
 .education-item,
-.experience-item,
-.involvement-item {
+.skill-item,
+.experience-item {
     font-size: 0.77rem;
 }
 
 .education-item p,
 .experience-item p,
-.involvement-item p {
+.skill-item p {
     margin: 0;
 }
 
@@ -148,41 +153,24 @@ h4 {
 .location {
     text-decoration: none;
 }
+
 /* --------------------------------- HEADERS -------------------------------- */
-.experience-item .title, .involvement-item .title, .education-item h4 {
-    font-family: "Roboto", sans-serif;
+.experience-item .title,
+.education-item h4 {
     font-weight: 500;
     font-size: 1rem;
-    color: #1f1f1f;
 }
 
 /* ------------------------ MOBILE SIZING FOR IPHONES ----------------------- */
 @media screen and (max-width: 428px) {
+
     .w3-container,
     .w3-panel {
         margin: 10px 0;
     }
 
-    .w3-third, .w3-twothird {
-        padding: 0!important;
+    .w3-third,
+    .w3-twothird {
+        padding: 0 !important;
     }
-}
-
-/* ------------------------ CERTIFICATIONS CONTAINER ------------------------ */
-.certification img {
-    width: 35px;
-    height: auto;
-    float: left;
-    margin-top: 10px
-}
-
-.certification p {
-    width: 80%;
-    margin-left: 60px;
-    font-size: 1.0rem;
-}
-
-.certification .certname {
-    font-weight: 400;
-  font-family: "Gabarito", sans-serif;
 }
