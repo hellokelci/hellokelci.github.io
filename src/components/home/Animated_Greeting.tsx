@@ -1,7 +1,9 @@
+import '../../css/components/animated_greeting.css';
+
 export default function AnimatedGreeting() {
     return (
         <>
-            <h1 className="jumping-message">
+            <h1 className="animated-greeting">
                 Hello, I'm<br />
                 <span className="moving k animate__animated animate__bounce">K</span>
                 <span className="moving e animate__animated animate__bounce">e</span>

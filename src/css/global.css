@@ -20,7 +20,6 @@
 
     scroll-behavior: smooth;
 
-    --border-radius: 20px;
     --baby-powder: #FDFDFA;
     --grid-block-font-size: 26px;
 }
@@ -61,8 +60,6 @@ body {
     margin: 0;
     height: 100vh;
     padding: 0;
-    display: flex;
-    flex-direction: column;
 }
 
 .padding {

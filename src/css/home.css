@@ -1,76 +1,46 @@
-/* ---------------------- Animated "Kelci Mensah" Title --------------------- */
-.moving {
-  display: inline-block;
+/* http://fonts.google.com/specimen/Young+Serif */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+/* https://fonts.google.com/specimen/Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  ----grid-block-border-radius: 7px;
 }
 
-.k {
-  animation-delay: 0s;
+/* ------------------------------- Grid Layout ------------------------------ */
+.route-container-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 4px solid greenyellow!important; */
 }
 
-.e {
-  animation-delay: 0.2s;
-}
-
-.l {
-  animation-delay: 0.3s;
-}
-
-.c {
-  animation-delay: 0.4s;
-}
-
-.i {
-  animation-delay: 0.5s;
-}
-
-.m {
-  animation-delay: 0.6s;
-}
-
-.ee {
-  animation-delay: 0.7s;
-}
-
-.n {
-  animation-delay: 0.8s;
-}
-
-.s {
-  animation-delay: 0.9s;
-}
-
-.a {
-  animation-delay: 1.1s;
-}
-
-.h {
-  animation-delay: 1.2s;
-}
-
-.period {
-  animation-delay: 1.3s;
-}
-
-
-/* ---------------------------- Grid Block Layout --------------------------- */
 .grid-layout {
   /* border: 1px solid purple; */
   height: 97%;
   width: 97%;
+  padding: 8px;
   max-width: 1536px;
   max-height: 723px;
-
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
 
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 33.3% 33.3% 33.3%;
-  gap: 0px;
-  padding: 0;
+  gap: 1.5px;
+  padding: px;
   overflow: hidden;
+}
+
+.grid-layout>div {
+  text-align: center;
+  margin: 3px;
+  font-size: 26px;
+  border-radius: var(----grid-block-border-radius);
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 @media screen and (max-width: 834px) {
@@ -80,122 +50,38 @@
   }
 }
 
-.grid-layout>div {
-  text-align: center;
-  margin: 3px;
-  font-size: 26px;
-  border-radius: var(--border-radius);
-  font-weight: 700;
-  font-family: 'Gabarito', sans-serif;
-}
-
-/* --------------------------- Grid Block Styling --------------------------- */
-#block-kelcimensah {
-  grid-column-start: span 2;
-  grid-row-start: span 2;
-  min-width: fit;
-  background-color: #1F1F1F;
-}
-
-.jumping-message {
-  text-align: left;
-  vertical-align: center;
-  width: fit-content;
-  user-select: none;
-  font-family: BrightDemo, serif;
-  line-height: 0.8;
-  color: #FBFAF5 !important;
-  height: fit-content;
-}
-
-.blue {
+/* ------------------------------ Grid Styling ------------------------------ */
+.block-blue {
   background-color: #345D98;
 }
 
-.red {
+.block-red {
   background-color: #DE6447;
 }
 
-.orange {
+.block-orange {
   background-color: #E07B4A;
 }
 
-.yellow {
+.block-yellow {
   background-color: #F3C571;
 }
 
-.green {
+.block-green {
   background-color: #3A7359;
 }
 
-.flicker {
+.block-black {
+  background-color: #3A7359;
+  background-color: #1F1F1F;
+  color: var(--baby-powder);
+}
+
+.block-flicker {
   -webkit-animation: flickerAnimation 9s infinite;
   -moz-animation: flickerAnimation 9s infinite;
   -o-animation: flickerAnimation 9s infinite;
   animation: flickerAnimation 9s infinite;
-}
-
-#block-contact-me {
-  border-radius: var(--border-radius);
-}
-
-#block-projects {
-  background-image: url('img/noisegradient01.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: var(--border-radius);
-}
-
-/* Date Block */
-#block-date {
-  color: #FBFAF5;
-  font-family: "Gabarito", sans-serif;
-  text-transform: uppercase;
-  flex-direction: column;
-}
-
-#block-date .date {
-  /* border: 1px solid yellow */
-}
-
-#block-date .current-date {
-  font-size: 3rem;
-  padding: 0;
-  font-weight: 600;
-  margin: 0;
-  /* border: 1px solid red; */
-}
-
-#block-date .current-time {
-  font-size: 0.8rem;
-  padding: 0;
-  margin: 0;
-  font-weight: 400;
-  width: 100%;
-  text-transform: capitalize;
-  /* border: 1px solid magenta; */
-}
-
-#block-resume {
-  background-color: #1F1F1F;
-  color: #FBFAF5;
-  text-align: left;
-  padding: 0 2rem;
-  font-size: 1.3rem;
-  border-radius: var(--border-radius);
-}
-
-.block-tilt {
-  text-decoration: none;
-  color: var(--baby-powder);
-}
-
-
-.block-tilt .tilt-content-container {
-  min-height: 100%;
-  max-height: 100%;
-  overflow: hidden;
 }
 
 @keyframes flickerAnimation {
@@ -254,94 +140,151 @@
   }
 }
 
-/* ---------------------- Media Queries & Responsivity ---------------------- */
-/* ----------------------- 1536px = Desktop Computers ----------------------- */
-@media screen and (max-width: 1536px) {
-  #block-resume p {
-    font-size: 1.45rem;
-    width: 70%;
-  }
-
-  .jumping-message {
-    font-size: 5.8vw;
-  }
+/* ------------------------------- Tilt Blocks ------------------------------ */
+.block-tilt {
+  text-decoration: none;
+  color: var(--baby-powder);
 }
 
-/* ------------------ 1280px = MacBook Pro 13" (Landscape) ------------------ */
-@media screen and (max-width: 1280px) {
-  #block-resume p {
-    font-size: 1.1rem;
-    width: 80%;
-  }
+.block-tilt .tilt-content-container {
+  min-height: 100%;
+  max-height: 100%;
+  overflow: hidden;
 }
 
-/* -------------------- 1194px = iPad Pro 11 (Landscape) -------------------- */
-@media screen and (max-width: 1194px) {
-  #block-date .current-date {
-    font-size: 3.15rem;
-  }
-
-  #block-date .current-time {
-    font-size: 0.95rem;
-  }
+/* ------------------------- Animated Greeting Block ------------------------ */
+#block-animated-greeting {
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+  min-width: fit;
+  background-color: #1F1F1F;
+  color: var(--baby-powder);
+  font-family: "Young Serif", serif;
+  font-size: 1.8rem;
+  user-select: none;
 }
 
-/* --------------------- 834px = iPad Pro 11 (Portrait) --------------------- */
-@media screen and (max-width: 834px) {
-  .jumping-message {
-    font-size: 5rem;
-  }
-
-  #block-date .current-date {
-    font-size: 3.2rem;
-  }
-
-  #block-date .current-time {
-    font-size: 0.95rem;
-  }
-
-  #block-resume,
-  #block-contact-me {
-    font-size: 1.6rem;
-  }
+.animated-greeting {
+  text-align: left;
+  vertical-align: center;
+  line-height: 1.1;
+  color: #FBFAF5 !important;
+  width: fit-content;
+  height: fit-content;
 }
 
-/* ------------------------ 428px = iPhone (portrait) ----------------------- */
+/* 428px = iPhone (portrait) */
 @media screen and (max-width: 428px) {
-  #block-resume,
+  #block-animated-greeting {
+    font-size: 1rem;
+  }
+}
+
+/* ---------------------------- Contact Me Block ---------------------------- */
+#block-contact-me {
+  border-radius: var(----grid-block-border-radius);
+  font-weight: 700;
+}
+
+/* 428px = iPhone (portrait) */
+@media screen and (max-width: 428px) {
   #block-contact-me {
+    font-size: 1.3rem;
+  }
+}
+
+/* 1536px = 4K Desktop Screens */
+@media screen and (min-width: 1536px) {
+  #block-contact-me {
+    font-size: 2.1rem;
+  }
+}
+
+/* ----------------------------- Projects Block ----------------------------- */
+#block-projects {
+  /* border: 1px solid greenyellow; */
+  border-radius: var(----grid-block-border-radius);
+  font-weight: 700;
+}
+
+/* 428px = iPhone (portrait) */
+@media screen and (max-width: 428px) {
+  #block-projects {
+    font-size: 1.3rem;
+  }
+}
+
+/* 1536px = 4K Desktop Screens */
+@media screen and (min-width: 1536px) {
+  #block-projects {
+    font-size: 2.1rem;
+  }
+}
+
+/* ------------------------------- Date Block ------------------------------- */
+#block-date {
+  color: #FBFAF5;
+  text-transform: uppercase;
+  flex-direction: column;
+}
+
+#block-date .date-container {
+  /* border: 1px solid red; */
+}
+
+#block-date .current-date {
+  font-weight: 800;
+  font-size: 3rem;
+  padding: 0;
+
+  margin: 0;
+  /* border: 1px solid red; */
+}
+
+#block-date .current-time {
+  font-size: 0.8rem;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  width: 100%;
+  text-transform: capitalize;
+  /* border: 1px solid magenta; */
+}
+
+/* 428px = iPhone (portrait) */
+@media screen and (max-width: 428px) {
+  #block-date .current-date {
+    font-size: 1.8rem;
+  }
+}
+
+/* 1536px = 4K Desktop Screens */
+@media screen and (min-width: 1536px) {
+  #block-date .current-time {
     font-size: 1.2rem;
-    padding: 1rem;
   }
+}
 
-  #block-resume p {
-    font-size: 1.1rem;
-    width: 100%;
+/* ------------------------------ Resume Block ------------------------------ */
+#block-resume {
+  text-align: left;
+  padding: 0 2rem;
+  font-size: 1.3rem;
+  border-radius: var(----grid-block-border-radius);
+  font-weight: 700;
+}
+
+/* 428px = iPhone (portrait) */
+@media screen and (max-width: 428px) {
+  #block-resume {
+    padding: 0 1rem;
+    font-size: 0.9rem;
   }
+}
 
-  #block-kelcimensah {
-    padding: 1rem;
-  }
-
-  #block-date .date {
-    font-size: 1.7rem;
-  }
-
-  #block-date .time {
-    font-size: 0.7rem;
-  }
-
-  .jumping-message {
-    font-size: 3rem;
-  }
-
-  .ppl {
-    margin-top: 25px !important;
-    width: 8rem !important;
-  }
-
-  .bks {
-    margin-top: 40px !important;
-    width: 7rem !important;
+/* 1536px = 4K Desktop Screens */
+@media screen and (min-width: 1536px) {
+  #block-resume {
+    font-size: 1.6rem;
   }
 }
