@@ -184,6 +184,8 @@
 #block-contact-me {
   border-radius: var(----grid-block-border-radius);
   font-weight: 700;
+    background-image: url('/grid/gradient-two.png');
+  background-size: cover;
 }
 
 /* 428px = iPhone (portrait) */
@@ -205,6 +207,8 @@
   /* border: 1px solid greenyellow; */
   border-radius: var(----grid-block-border-radius);
   font-weight: 700;
+  background-image: url('/grid/gradient-one.png');
+  background-size: cover;
 }
 
 /* 428px = iPhone (portrait) */

@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Footer, NavigationBar, RouteTitle } from '../components/Route_Components';
 import { AboutMeLink } from '../components/resume/About_Me';
 import { ExperienceItem, Google, NASA, USArmy } from '../components/resume/Experience';
-import { AcademicInvolvement } from '../components/resume/Academic_Involvement';
 import {ResumeSubheader, ResumeHeader} from '../components/resume/Headers';
 import img_profile from '/profile.jpg'
 import PageLoader from "../components/Page_Loader";
