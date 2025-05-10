@@ -1,0 +1,48 @@
+.loader {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 6rem;
+    height: 6rem;
+    margin: auto;
+}
+
+.loader::before,
+.loader::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+
+}
+
+/* Loader Blue Circle */
+.loader::before {
+    background: #DA4E3F;
+    animation: animate 2s ease-in-out infinite;
+}
+
+/* Loader Glassmorphism */
+.loader::after {
+    background: rgba(56, 109, 241, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: animate 2s ease-in-out infinite;
+    z-index: 1;
+    animation-delay: -1s;
+}
+
+/* Animation */
+@keyframes animate {
+
+    0%,
+    100% {
+        transform: translateX(-40px);
+    }
+
+    50% {
+        transform: translateX(40px);
+    }
+}

@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+.resume-container {
+    width: 90%!important;
+    /* border: 1px solid magenta; */
+    margin: 0 auto;
+}
+
+/* ------------------------- RESUME TITLE CONTAINER ------------------------- */
+.title-container h1 {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 3rem;
+}
+
+/* download button/link */
+.btn-download {
+    display: inline-block;
+    font-family: 'Space Mono', monospace;
+}
+
+.btn-download a {
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.btn-download a:hover {
+    color: #ea4335;
+}
+
+/* --------------------------- ABOUT ME CONTAINER --------------------------- */
+.photo-container {
+    color: #FFF;
+}
+
+.photo-container img {
+    width: 100%;
+}
+
+.aboutme-container .widget {
+    font-size: 0.87rem;
+    line-height: 1.5rem;
+}
+
+.widget {
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+.aboutme-container a:hover {
+    color: #ea4335;
+}
+
+.aboutme-container a {
+    color: #1f1f1f;
+}
+
+.aboutme-information {
+    margin: 1rem 0;
+}
+
+.aboutme-name {
+    font-weight: 800;
+    font-family: "Gabarito", sans-serif;
+}
+
+/* -------------------------------- HEADINGS -------------------------------- */
+h3 {
+    font-size: 1.1rem;
+    margin: 2rem 0 0;
+}
+
+h4 {
+    font-size: 0.85rem;
+    margin: 0.70rem 0 0.1rem;
+}
+
+/* ---------- EDUCATION, WORK EXPERIENCE, ACHIEVEMENTS, INVOLVEMENT --------- */
+.education-item,
+.experience-item,
+.involvement-item {
+    font-size: 0.77rem;
+}
+
+.education-item p,
+.experience-item p,
+.involvement-item p {
+    margin: 0;
+}
+
+.education-item .date {
+    margin: 0.4rem 0;
+}
+
+.hyperlink {
+    text-decoration-style: dotted;
+    transition: 0.2s ease-in-out;
+}
+
+.hyperlink:hover {
+    color: #1f1f1f !important;
+}
+
+.company-logos {
+    display: inline;
+    font-size: 1rem;
+}
+
+.google {
+    font-family: "Gabarito", sans-serif;
+}
+
+.google span:nth-child(1) {
+    color: #4285f4;
+}
+
+.google span:nth-child(2) {
+    color: #ea4335;
+}
+
+.google span:nth-child(3) {
+    color: #fbbc05;
+}
+
+.google span:nth-child(4) {
+    color: #4285f4;
+}
+
+.google span:nth-child(5) {
+    color: #34a835;
+}
+
+.google span:nth-child(6) {
+    color: #ea4335;
+}
+
+.nasa {
+    font-family: 'Audiowide', sans-serif;
+    color: #0b3d91;
+}
+
+.army {
+    font-family: 'Russo One', sans-serif;
+    color: #1f1f1f;
+}
+
+.location {
+    text-decoration: none;
+}
+/* --------------------------------- HEADERS -------------------------------- */
+.experience-item .title, .involvement-item .title, .education-item h4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #1f1f1f;
+}
+
+/* ------------------------ MOBILE SIZING FOR IPHONES ----------------------- */
+@media screen and (max-width: 428px) {
+    .w3-container,
+    .w3-panel {
+        margin: 10px 0;
+    }
+
+    .w3-third, .w3-twothird {
+        padding: 0!important;
+    }
+}
+
+/* ------------------------ CERTIFICATIONS CONTAINER ------------------------ */
+.certification img {
+    width: 35px;
+    height: auto;
+    float: left;
+    margin-top: 10px
+}
+
+.certification p {
+    width: 80%;
+    margin-left: 60px;
+    font-size: 1.0rem;
+}
+
+.certification .certname {
+    font-weight: 400;
+  font-family: "Gabarito", sans-serif;
+}

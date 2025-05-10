@@ -1,0 +1,185 @@
+/* https://fonts.google.com/specimen/Space+Mono */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+/* https://fonts.google.com/specimen/Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* https://fonts.google.com/specimen/Gabarito */
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;600;700;800&display=swap');
+
+:root {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    scroll-behavior: smooth;
+
+    --border-radius: 20px;
+    --baby-powder: #FDFDFA;
+    --grid-block-font-size: 26px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    height: 100%;
+}
+
+body {
+    background-color: #FBFAF5;
+}
+
+.block-padding {
+    padding: 0.8rem 1rem;
+}
+
+.centered-v-h {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --------------------------------- ROUTES --------------------------------- */
+.route-container {
+    width: 100%;
+    /* border: 3px solid red; */
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.padding {
+    padding: 0.8rem;
+}
+
+.route-title-container {
+    /* border: 2px solid blue; */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.route-title-container h1 {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 0;
+    margin: 4.2rem 0 0;
+    font-family: "Gabarito", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.route-page-summary {
+    margin-bottom: 3rem;
+}
+
+/* --------------------------------- HEADERS -------------------------------- */
+.h1-header,
+.subheader {
+    font-weight: 800;
+    font-family: "Gabarito", sans-serif;
+}
+
+.h1-header {
+    margin: 4rem 0.5rem 0 0;
+}
+
+/* --------------------------------- FOOTER --------------------------------- */
+.footer-container {
+    /* border: 2px solid magenta; */
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    padding: 0.4rem;
+    margin-top: auto;
+}
+
+.footer-container p {
+    margin: 1rem auto 1.5rem !important;
+}
+
+.navigation-container {
+    height: min-content;
+    width: 100% !important;
+
+    max-width: 1024px;
+    /* this is the maximum width that all content on the site will reach */
+    margin: 0 auto;
+    border-radius: 0.4rem;
+    position: sticky;
+    top: 7px;
+    z-index: 99;
+
+    background: rgba(255, 255, 255, 0.37);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* ----------------------------- NAVIGATION BAR ----------------------------- */
+.navigation-container ul {
+    list-style-type: none;
+    padding: 0 1rem;
+}
+
+.navigation-container li {
+    display: inline-block;
+    text-align: left;
+    padding: 0;
+    vertical-align: middle
+}
+
+.link {
+    padding: 0 0.9rem 0 0;
+    color: #1f1f1f;
+    transition: 0.15s ease-in-out;
+    text-decoration: none;
+}
+
+.home:hover {
+    color: #DA4E3F;
+}
+
+.studio:hover {
+    color: #E07B4A;
+}
+
+.contact:hover {
+    color: #345D98;
+}
+
+.resume:hover {
+    color: #3A7359;
+}
+
+.logo {
+    float: right;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+.logo img {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    margin: 0;
+}
