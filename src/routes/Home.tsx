@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import PageLoader from "../components/Page_Loader";
-import { Block, ActionBlock } from "../components/home/Grid_Blocks";
+import { Block, ActionBlock } from "../components/Grid_Blocks";
 import AnimatedGreeting from "../components/home/Animated_Greeting";
 import 'animate.css';
 import '../css/home.css';

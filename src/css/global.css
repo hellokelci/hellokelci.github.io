@@ -21,6 +21,9 @@
     scroll-behavior: smooth;
 
     --baby-powder: #FDFDFA;
+    --eerie-black: #1F1F1F;
+
+    --grid-gap: 1.5px;
     --grid-block-font-size: 26px;
 }
 
@@ -111,3 +114,91 @@ body {
     margin: 1rem auto 1.5rem !important;
 }
 
+/* ------------------------------ Grid Styling ------------------------------ */
+.block-blue {
+    background-color: #345D98;
+}
+
+.block-red {
+    background-color: #DE6447;
+}
+
+.block-orange {
+    background-color: #E07B4A;
+}
+
+.block-yellow {
+    background-color: #F3C571;
+}
+
+.block-green {
+    background-color: #3A7359;
+}
+
+.block-black {
+    background-color: #1F1F1F;
+    color: var(--baby-powder);
+}
+
+.block-flicker {
+    -webkit-animation: flickerAnimation 9s infinite;
+    -moz-animation: flickerAnimation 9s infinite;
+    -o-animation: flickerAnimation 9s infinite;
+    animation: flickerAnimation 9s infinite;
+}
+
+@keyframes flickerAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes flickerAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes flickerAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes flickerAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

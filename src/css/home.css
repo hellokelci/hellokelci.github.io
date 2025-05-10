@@ -27,8 +27,8 @@
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 33.3% 33.3% 33.3%;
-  gap: 1.5px;
-  padding: px;
+  gap: var(--grid-gap);
+  padding: 0px;
   overflow: hidden;
 }
 
@@ -47,96 +47,6 @@
   .grid-layout {
     grid-template-columns: 33.3% 33.3% 33.3%;
     grid-template-rows: 25% 25% 25% 25%;
-  }
-}
-
-/* ------------------------------ Grid Styling ------------------------------ */
-.block-blue {
-  background-color: #345D98;
-}
-
-.block-red {
-  background-color: #DE6447;
-}
-
-.block-orange {
-  background-color: #E07B4A;
-}
-
-.block-yellow {
-  background-color: #F3C571;
-}
-
-.block-green {
-  background-color: #3A7359;
-}
-
-.block-black {
-  background-color: #3A7359;
-  background-color: #1F1F1F;
-  color: var(--baby-powder);
-}
-
-.block-flicker {
-  -webkit-animation: flickerAnimation 9s infinite;
-  -moz-animation: flickerAnimation 9s infinite;
-  -o-animation: flickerAnimation 9s infinite;
-  animation: flickerAnimation 9s infinite;
-}
-
-@keyframes flickerAnimation {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes flickerAnimation {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes flickerAnimation {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes flickerAnimation {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
   }
 }
 
@@ -184,7 +94,7 @@
 #block-contact-me {
   border-radius: var(----grid-block-border-radius);
   font-weight: 700;
-    background-image: url('/grid/gradient-two.png');
+  background-image: url('/grid/gradient-four.png');
   background-size: cover;
 }
 

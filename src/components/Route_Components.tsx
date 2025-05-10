@@ -24,6 +24,7 @@ export function NavigationBar() {
                     <ul>
                         <li><Link className="navigation-link nav-home" to="/">Home</Link></li>
                         <li><Link className="navigation-link nav-resume" to="/resume">Resume</Link></li>
+                        <li><Link className="navigation-link nav-contact" to="/contact">Contact</Link></li>
                         <li className="nav-logo"> <img src={logo} alt="Colorful portfolio site logo made of cubes stacked to depict the letter K" /> </li>
                     </ul>
                 </nav>

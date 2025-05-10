@@ -1,0 +1,132 @@
+/* ------------------------------- Grid Layout ------------------------------ */
+.route-container-contact {
+    width: 60vw;
+    height: 70vh;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 50% 50%;
+    gap: var(--grid-gap);
+    padding: 0;
+
+    font-family: "Inter", sans-serif;
+
+}
+
+.route-container-contact>div {
+    margin: 3px;
+    border-radius: var(----grid-block-border-radius);
+    overflow: hidden;
+}
+
+/* 834px - iPad Pro 11 and below */
+@media screen and (max-width: 834px) {
+    .route-container-contact {
+        grid-template-rows: 33.3% 33.3% 33.3%;
+        grid-template-columns: 50% 50%;
+        width: 90%;
+    }
+}
+
+/* --------------------------- Grid Block Styling --------------------------- */
+.route-container-contact a {
+    color: var(--baby-powder)
+}
+
+/* Socials Block */
+#block-social {
+    grid-column-start: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1.6rem;
+
+    color: var(--baby-powder);
+    background-color: #E15F40;
+}
+
+#block-social a {
+    text-decoration-style: dotted;
+    transition: 0.3s ease-in-out;
+}
+
+#block-social a:hover {
+    color: #1f1f1f; 
+}
+
+/* Emails Block */
+#block-email {
+    grid-column-start: span 1;
+    border: 2px solid #E15F40;
+    color: #E15F40;
+    display: flex;
+    text-decoration: none;
+}
+
+#block-email p {
+    width: 100%;
+}
+
+/* 428px = iPhone (portrait) */
+@media screen and (max-width: 428px) {
+    #block-email p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Home Block */
+#block-home {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--grid-block-font-size);
+
+    font-weight: 700;
+    padding: 1.4rem;
+
+    background-image: url('/grid/gradient-five.png');
+    background-size: cover;
+    text-decoration: none;
+}
+
+/* Resume Block */
+#block-resume {
+    /* color: var(--eerie-black); */
+    background-color: #1F1F1F;
+
+}
+
+/* Stay Connected Block */
+#block-stay-connected {
+    color: #1f1f1f;
+    border: 2px solid #1f1f1f;
+}
+
+#block-stay-connected p {
+    /* border: 1px solid magenta; */
+    width: 80%;
+}
+
+.method-of-contact>h3,
+p {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid magenta; */
+    width: fit-content;
+}
+
+.method-of-contact a {
+    transition: 0.3s ease-in-out;
+}
+
+.method-of-contact a:hover {
+    color: #1f1f1f;
+}
+
+.method-of-contact:not(:last-child) {
+    margin-bottom: 10px;
+}
