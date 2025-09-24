@@ -79,10 +79,16 @@ function Resume() {
                                         </div>
 
                                         {/* skills > about me container */}
-                                        <ResumeSubheader hex_color="1F1F1F" plain_text='Technical Skills'/>
+                                        <ResumeSubheader hex_color="1F1F1F" plain_text='Languages'/>
 
                                         <div className="skill-item">
-                                            <p>Python, JavaScript, TypeScript, React.js, SQL, Git, HTML, CSS, Google Cloud Platform, Figma, Adobe Photoshop, Procreate iOS</p>
+                                            <p>Python, JavaScript, TypeScript, React.js, SQL, Git, HTML+CSS</p>
+                                        </div>
+
+                                        <ResumeSubheader hex_color="1F1F1F" plain_text='Tools & Products'/>
+
+                                        <div className="skill-item">
+                                            <p>Cloud Build, Vertex AI Platform (Gemini, Workbench, Agent Builder, Pipelines), Data Fusion, Cloud Run, Cloud SQL, Looker Studio, Procreate iOS, Figma, Adobe Photoshop</p>
                                         </div>
 
                                         <br />
@@ -98,15 +104,18 @@ function Resume() {
 
                                     <ResumeHeader hex_color="DA4E3F" plain_text="Work Experience"/>
 
-                                    <ExperienceItem experience="Cloud Architect, Google Cloud">
+                                    <ExperienceItem experience="Customer Engineer (Cloud Architect), Google Cloud">
                                         <a className="location"><Google />, New York City, NY</a>
                                         <p><i className="fa-regular fa-calendar"></i> November 2023 - Present</p>
                                         <ul>
                                             <li>
-                                                Designed and supported technical implementation of highly-available, scalable, and secure cloud solutions on Google Cloud Platform within startups customer sector.
+                                                Drove the end-to-end technical implementation of scalable and secure cloud solutions for five (and counting) high-growth startups, delivering projects within accelerated timelines and providing production-deployment support.
                                             </li>
                                             <li>
-                                                Utilized expertise in Google Cloud Platform products including serverless computing (Cloud Functions, Cloud Run), artificial intelligence (Vertex AI, Gemini), and data analytics (BigQuery, Dataflow) to successfully deliver multiple large-scale cloud migration projects, exceeding client expectations and timelines.
+                                                Developed SQL-based internal metrics tools and dashboards to assist with startups account management and platform growth.
+                                            </li>
+                                            <li>
+                                                Produced shareable, hands-on, technical demos for applied industry-specific use cases to demonstrate feasibility of building business solutions on the cloud with step-by-step explanations [<a style={{ color: "#0057E7" }} className="hyperlink" href="https://gitlab.com/gcloud-demos/gemini-events-specialist" target="_blank">Gemini Events Specialist</a>, <a style={{ color: "#3A7359" }} className="hyperlink" href="https://gitlab.com/gcloud-demos/harborview-customer-segmentation-analysis" target="_blank">Customer Segmentation Analysis</a>]
                                             </li>
                                         </ul>
                                     </ExperienceItem>
@@ -118,19 +127,20 @@ function Resume() {
                                         <p><i className="fa-regular fa-calendar"></i> May 2022 - August 2022</p>
                                         <ul>
                                             <li>
-                                                Developed an <a style={{ color: "#DA4E3F" }} className="hyperlink" href="https://console.cloud.google.com/getting-started?walkthrough_id=functions--first-function-python" target="_blank">interactive Python web-based tutorial</a> to help beginner cloud developers get started writing functions with Google Cloud.
+                                                Developed an <a style={{ color: "#DA4E3F" }} className="hyperlink" href="https://console.cloud.google.com/getting-started?walkthrough_id=functions--first-function-python" target="_blank">interactive Python web-based tutorial</a> for beginner cloud developers to create HTTP functions using Cloud Functions API and Cloud Build API.
                                             </li>
                                             <li>
-                                                Created audio and visual media content to advocate the Google Cloud developer and enterprise partnership.
+                                                Produced audio and visual media content to drive individual developer adoption of Google Cloud Platform (GCP).
                                                 <ul>
                                                     <li>
-                                                        Contributed to the production life cycle of YouTube content for Google Cloud including contextual research, scripting, and starring in visual media. [<a className="hyperlink" href="#" style={{ color: "#cc0033" }}>view</a>]
+                                                        Contributed YouTube content creation by conducting contextual research, producing scripts, and starring in videos directed by the Google Production Studio. [
+                                                            <a className="hyperlink" href="https://www.youtube.com/watch?v=CX0BTkimL7A" style={{ color: "#0057E7" }}>view</a>, <a className="hyperlink" href="https://www.youtube.com/watch?v=noCY3oGWdeI" style={{ color: "#cc0033" }}>view</a>, <a className="hyperlink" href="https://www.youtube.com/watch?v=S07XtiB_wPU" style={{ color: "#3A7359" }}>view</a>]
                                                     </li>
                                                     <li>
-                                                        Supported the production lifecycle of audio content for Google Cloud Platform by starring in podcasts featuring internal and external clients.
+                                                        Participated in and supported the production lifecycle of GCP podcasts with internal and external clients. [<a className="hyperlink" href="https://googlecloudpodcast.libsyn.com/disaster-recovery-with-cody-ault-and-jo-anne-bourne" style={{ color: "#3A7359" }}>listen</a>, <a className="hyperlink" href="https://googlecloudpodcast.libsyn.com/contact-center-ai-with-amit-kumar-and-vasili-triant" style={{ color: "#cc0033" }}>listen</a>]
                                                     </li>
                                                     <li>
-                                                        Published a technical blog piece advocating benefits of student and entry-level developers using Google Cloud Platform’s (GCP) <a style={{ color: "#0057E7" }} href="https://cloud.google.com/bigquery/" className="hyperlink" target="_blank">Big Query</a> solution. [<a className="hyperlink" href="#" style={{ color: "#cc0033" }}>view</a>]
+                                                        Published an official technical blog advocating benefits of student and entry-level developer adoption to <a style={{ color: "#0057E7" }} href="https://cloud.google.com/bigquery/" className="hyperlink" target="_blank">Big Query</a>, including a step-by-step scenario tutorial. [<a className="hyperlink" href="https://cloud.google.com/blog/topics/developers-practitioners/leveling-your-data-analysis-skills-student" style={{ color: "#DA4E3F" }}>read</a>]
                                                     </li>
                                                 </ul>
                                             </li>
@@ -148,18 +158,19 @@ function Resume() {
 
                                         <ul>
                                             <li>
-                                                Integrated Wordpress CMS tools with HTML, CSS, and JavaScript programming to develop and maintain team content on the official website for the NASA Glenn Graphics and Visualization Lab.
-                                                <ul>
-                                                    <li>
-                                                        Monitored site metrics using web analytics tools to gauge public interest on projects.
-                                                    </li>
-                                                </ul>
+                                                Created 2D digital iconography from scratch and integrated into the frontend UI with JavaScript to OpenMDAO, an open source optimization framework and platform used to build internal analysis tools with derivatives.
                                             </li>
                                             <li>
-                                                Developed K-12 STEM education curriculums for virtual audiences using Python and Java programming languages with a focus on data structure algorithms, web development, and hands-on robotics programming.
+                                                Developed custom Wordpress CMS tools with JavaScript, HTML + CSS programming to maintain internal team content on the official website for the NASA Glenn Research Center’s Graphics and Visualization Lab.
                                             </li>
                                             <li>
-                                                Created digital iconography for internal tools while practicing government-standard design principles.
+                                                Monitored Wordpress site metrics using Google Analytics to drive public interest and monitor demo performance on 3D aerospace vehicle and parts modeling projects (planes, engines, and wind turbines).
+                                            </li>
+                                            <li>
+                                                Led the development of K-12 STEM education curriculums for virtual audiences to teach Python and Java principles to children in STEM, with a focus on hands-on robotics programming, low-level data structures and algorithms.
+                                            </li>
+                                            <li>
+                                                Directed NASA outreach initiatives and hosted broadcast events to generate public interest in the aerospace industry and the decades of research work generated from the Graphics Lab.
                                             </li>
                                         </ul>
                                     </ExperienceItem>

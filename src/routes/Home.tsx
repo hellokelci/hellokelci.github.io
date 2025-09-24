@@ -39,12 +39,14 @@ export default function Home() {
                             <AnimatedGreeting />
                         </div>
 
-                        <ActionBlock
-                            href_link='/#/projects'
-                            plain_text='Projects.'
+                        {/* <ActionBlock
+                            href_link=''
+                            plain_text=''
                             block_id='block-projects'
                             css_class='block-padding centered-v-h block-orange tilt-content-container'
-                        />
+                        /> */}
+
+                        <Block block_id='block-projects' css_class="block-flicker block-blue" />
 
                         <Block css_class="block-flicker block-blue" />
 
